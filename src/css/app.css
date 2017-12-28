@@ -114,6 +114,9 @@ a:hover, a:focus {
 .form-wrapper {
   margin: 40px 0; }
 
+.success-wrapper {
+  margin: 10px 0 40px 0; }
+
 /* MODULE STYLES */
 /* Mailchip Widget */
 label {
@@ -157,6 +160,56 @@ label {
   position: relative;
   margin-bottom: 15px; }
 
+/* Animated Tick */
+svg {
+  width: 100px;
+  display: block;
+  margin: 0 auto; }
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0; }
+  .path.circle {
+    -webkit-animation: dash 0.9s ease-in-out;
+    animation: dash 0.9s ease-in-out; }
+  .path.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+    animation: dash 0.9s 0.35s ease-in-out forwards; }
+  .path.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+    animation: dash-check 0.9s 0.35s ease-in-out forwards; }
+
+p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em; }
+  p.success {
+    color: #73af55; }
+  p.error {
+    color: #d06079; }
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000; }
+  100% {
+    stroke-dashoffset: 0; } }
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100; }
+  100% {
+    stroke-dashoffset: 900; } }
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100; }
+  100% {
+    stroke-dashoffset: 900; } }
 /* Meida Queries */
 @media only screen and (max-width: 768px) {
   html {
