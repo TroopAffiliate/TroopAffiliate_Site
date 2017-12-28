@@ -108,4 +108,55 @@ a:hover, a:focus {
 .socail-icons > li {
   display: inline-block; }
 
+.form-wrapper {
+  margin: 40px 0; }
+
+/* MODULE STYLES */
+/* Mailchip Widget */
+label {
+  color: #667c8b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s; }
+
+#mc-embedded-subscribe {
+  width: 100%;
+  height: 52px;
+  background-color: #ffffff;
+  color: #00253e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem; }
+
+#mce-EMAIL {
+  width: 100%;
+  height: 52px;
+  background: none;
+  border: 1px solid #ffffff;
+  padding-left: 23px;
+  outline: none; }
+
+#mce-EMAIL:focus + label,
+#mce-EMAIL.has-value + label {
+  top: -10px;
+  font-size: 1.2rem;
+  color: #667c8b; }
+
+.mc-field-group {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px; }
+
+/* Meida Queries */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 8px; } }
+
 /*# sourceMappingURL=app.css.map */

@@ -1,1 +1,46 @@
-// MODULE STYLES
+/* MODULE STYLES */
+
+/* Mailchip Widget */ 
+
+label
+    color: $dark-blue-shade
+    font-family: $font-stack-open-sans
+    font-size: 1.8rem
+    font-weight: $regular
+    position: absolute
+    top: 50%
+    right: null
+    bottom: null
+    left: 23px
+    transform: translateY(-50%)
+    pointer-events: none
+    transition: 0.3s
+
+#mc-embedded-subscribe
+    width: 100%
+    height: 52px
+    background-color: $white
+    color: $dark-blue
+    font-family: $font-stack-open-sans
+    font-weight: $bold
+    text-transform: uppercase
+    font-size: 1.8rem
+
+#mce-EMAIL
+    width: 100%
+    height: 52px
+    background: none
+    border: 1px solid $white
+    padding-left: 23px
+    outline: none
+
+#mce-EMAIL:focus + label,
+#mce-EMAIL.has-value + label
+    top: -10px
+    font-size: 1.2rem
+    color: $dark-blue-shade
+
+.mc-field-group
+    display: flex
+    position: relative
+    margin-bottom: 15px
