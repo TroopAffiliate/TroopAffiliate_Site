@@ -19,18 +19,19 @@ label
 #mc-embedded-subscribe
     width: 100%
     height: 52px
-    background-color: $white
-    color: $dark-blue
+    background-color: $prime-color
+    color: $white
     font-family: $font-stack-open-sans
     font-weight: $bold
     text-transform: uppercase
     font-size: 1.8rem
+    border: none
 
 #mce-EMAIL
     width: 100%
     height: 52px
     background: none
-    border: 1px solid $white
+    border: 1px solid $prime-color
     padding-left: 23px
     outline: none
 
@@ -38,13 +39,19 @@ label
 #mce-EMAIL.has-value + label
     top: -10px
     font-size: 1.2rem
-    color: $dark-blue-shade
+    color: $tertiary-color
 
 .mc-field-group
     display: flex
     position: relative
     margin-bottom: 15px
 
+#mc-embedded-subscribe:hover
+    background-color: $tertiary-color
+    color: $white
+    text-decoration: none
+    +transition(all 0.3s ease-in-out)
+    
 /* Animated Tick */
 
 svg
@@ -69,7 +76,7 @@ svg
 
 p
     text-align: center
-    margin: 20px 0 60px
+    margin: 20px 0 40px
     font-size: 1.25em
     &.success
         color: #73af55

@@ -3,8 +3,8 @@ html
     font-size: 10px
 
 body
-    background-color: $dark-blue
-    color: $white
+    background-color: $bg-color
+    color: $prime-color
     overflow-y: hidden
 
 h1
@@ -23,10 +23,14 @@ p
     font-weight: $light
 
 a
-    color: $white
+    color: $prime-color
+
+a:hover
+    text-decoration: none
+    +transition(all 0.3s ease-in-out)
 
 a:hover, a:focus
-    color: $light-blue
+    color: $tertiary-color
 
 .socail-icons > li
     font-size: 2.8rem
