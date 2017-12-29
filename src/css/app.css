@@ -77,6 +77,15 @@ a:hover, a:focus {
   font-size: 2.8rem;
   margin: 0 20px; }
 
+.test-phase {
+  background-color: #CC0807;
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 /* Animation */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
@@ -148,7 +157,8 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.8rem;
-  border: none; }
+  border: none;
+  border-radius: 0; }
 
 #mce-EMAIL {
   width: 100%;
@@ -156,7 +166,8 @@ label {
   background: none;
   border: 1px solid #00253e;
   padding-left: 23px;
-  outline: none; }
+  outline: none;
+  border-radius: 0; }
 
 #mce-EMAIL:focus + label,
 #mce-EMAIL.has-value + label {
