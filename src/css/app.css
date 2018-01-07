@@ -136,6 +136,9 @@ a:hover, a:focus {
 
 /* MODULE STYLES */
 /* Mailchip Widget */
+#mc_embed_signup form {
+  padding: 0 !important; }
+
 label {
   color: #667c8b;
   font-family: "Open Sans", sans-serif;
