@@ -51,7 +51,7 @@ h2 {
   font-size: 3.2rem;
   line-height: 0.9;
   margin: 22px 0;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-family: "Open Sans", sans-serif; }
 
 p {
@@ -144,11 +144,11 @@ label {
   position: absolute;
   top: 50%;
   left: 23px;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
   pointer-events: none;
   transition: 0.3s; }
 
-#mc-embedded-subscribe {
+#mc_embed_signup_scroll .clear .button {
   width: 100%;
   height: 52px;
   background-color: #00253e;
@@ -165,20 +165,25 @@ label {
   height: 52px;
   background: none;
   border: 1px solid #00253e;
-  padding-left: 23px;
+  text-indent: 23px !important;
   outline: none;
   border-radius: 0; }
 
 #mce-EMAIL:focus + label,
 #mce-EMAIL.has-value + label {
-  top: 0;
+  top: -7px;
   font-size: 1.2rem;
   color: #0079CA; }
+
+#mc_embed_signup .indicates-required {
+  margin-right: 0 !important; }
 
 .mc-field-group {
   display: flex;
   position: relative;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  width: 100% !important;
+  padding-bottom: 0 !important; }
 
 #mc-embedded-subscribe:hover {
   background-color: #0079CA;
@@ -213,8 +218,9 @@ svg {
 
 p {
   text-align: center;
-  margin: 20px 0 40px;
-  font-size: 1.25em; }
+  margin: 20px 0 0;
+  font-size: 1.25em;
+  line-height: 1.3; }
   p.success {
     color: #73af55; }
   p.error {
