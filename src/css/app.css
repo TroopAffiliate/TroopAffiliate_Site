@@ -51,13 +51,14 @@ h2 {
   font-size: 3.2rem;
   line-height: 0.9;
   margin: 22px 0;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-family: "Open Sans", sans-serif; }
 
 p {
   font-size: 1.8rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 10px 0px 10px; }
 
 a {
   color: #00253e; }
@@ -122,6 +123,9 @@ a:hover, a:focus {
   top: 50%;
   transform: translateY(-50%); }
 
+.logo {
+  margin-top: 20px; }
+
 .socail-icons {
   margin: 24px 0; }
 
@@ -129,13 +133,16 @@ a:hover, a:focus {
   display: inline-block; }
 
 .form-wrapper {
-  margin: 0 0 40px 0; }
+  margin: 0; }
 
 .success-wrapper {
   margin: 10px 0 40px 0; }
 
 /* MODULE STYLES */
 /* Mailchip Widget */
+#mc_embed_signup form {
+  padding: 0 !important; }
+
 label {
   color: #667c8b;
   font-family: "Open Sans", sans-serif;
@@ -148,7 +155,7 @@ label {
   pointer-events: none;
   transition: 0.3s; }
 
-#mc-embedded-subscribe {
+#mc_embed_signup_scroll .clear .button {
   width: 100%;
   height: 52px;
   background-color: #00253e;
@@ -165,7 +172,7 @@ label {
   height: 52px;
   background: none;
   border: 1px solid #00253e;
-  padding-left: 23px;
+  text-indent: 23px !important;
   outline: none;
   border-radius: 0; }
 
@@ -175,10 +182,16 @@ label {
   font-size: 1.2rem;
   color: #0079CA; }
 
+#mc_embed_signup .indicates-required {
+  margin-right: 0 !important;
+  margin-bottom: 3px; }
+
 .mc-field-group {
   display: flex;
   position: relative;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  width: 100% !important;
+  padding-bottom: 0 !important; }
 
 #mc-embedded-subscribe:hover {
   background-color: #0079CA;
@@ -213,8 +226,7 @@ svg {
 
 p {
   text-align: center;
-  margin: 20px 0 40px;
-  font-size: 1.25em; }
+  line-height: 1.3; }
   p.success {
     color: #73af55; }
   p.error {

@@ -1,4 +1,3 @@
-
 // Mailchip form foucs
 $(function(){
     $('#mc-embedded-subscribe-form .mc-field-group .email').focusout(function(){

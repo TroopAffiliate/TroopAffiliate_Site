@@ -2,6 +2,9 @@
 
 /* Mailchip Widget */ 
 
+#mc_embed_signup form
+    padding: 0 !important
+
 label
     color: $dark-blue-shade
     font-family: $font-stack-open-sans
@@ -16,7 +19,7 @@ label
     pointer-events: none
     transition: 0.3s
 
-#mc-embedded-subscribe
+#mc_embed_signup_scroll .clear .button
     width: 100%
     height: 52px
     background-color: $prime-color
@@ -33,7 +36,7 @@ label
     height: 52px
     background: none
     border: 1px solid $prime-color
-    padding-left: 23px
+    text-indent: 23px !important
     outline: none
     border-radius: 0
 
@@ -43,10 +46,16 @@ label
     font-size: 1.2rem
     color: $tertiary-color
 
+#mc_embed_signup .indicates-required
+    margin-right: 0 !important
+    margin-bottom: 3px
+
 .mc-field-group
     display: flex
     position: relative
     margin-bottom: 15px
+    width: 100% !important
+    padding-bottom: 0 !important
 
 #mc-embedded-subscribe:hover
     background-color: $tertiary-color
@@ -78,8 +87,7 @@ svg
 
 p
     text-align: center
-    margin: 20px 0 40px
-    font-size: 1.25em
+    line-height: 1.3
     &.success
         color: #73af55
     &.error
