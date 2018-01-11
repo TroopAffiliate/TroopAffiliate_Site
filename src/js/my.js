@@ -17,7 +17,7 @@ $(function(){
 
     $('form').submit( function(){
         var eml = $('#mc-embedded-subscribe-form .mc-field-group .email');
-        var pattern = new RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$");
+        var pattern = new RegExp("[a-z0-9._%+-]+@([a-z0-9.-]{2,5})+[\.][a-z]{2,3}$");
 
         if (pattern.test(eml.val())) {
             eml.removeClass('hasError');
